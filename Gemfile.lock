@@ -91,6 +91,8 @@ GEM
       websocket-driver (>= 0.5.1)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
+    heroku-deflater (0.6.2)
+      rack (>= 1.4.5)
     hiredis (0.5.2)
     hitimes (1.2.3)
     i18n (0.7.0)
@@ -135,6 +137,11 @@ GEM
       rails-deprecated_sanitizer (>= 1.0.1)
     rails-html-sanitizer (1.0.2)
       loofah (~> 2.0)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.4)
+    rails_stdout_logging (0.0.4)
     railties (5.0.0.beta1)
       actionpack (= 5.0.0.beta1)
       activesupport (= 5.0.0.beta1)
@@ -189,10 +196,12 @@ DEPENDENCIES
   bootstrap-sass
   byebug
   coffee-rails (~> 4.1.0)
+  heroku-deflater
   jquery-rails
   pg (~> 0.18)
   puma
   rails (>= 5.0.0.beta1, < 5.1)
+  rails_12factor
   slim-rails
   spring
   turbolinks
