@@ -1,0 +1,23 @@
+.splash {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: asset-url('splash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .splash--header {
+    margin: 50px;
+    font-weight: 700;
+    color: white;
+
+    .title {
+      font-size: 26px;
+      margin-bottom: 25px;
+    }
+
+    .blurb {
+      font-size: 18px;
+    }
+  }
+}
