@@ -46,6 +46,31 @@ html
               br
               ' Singapore
           .col-sm-6.splash--cta
-            = link_to "Register Now", "#", class: "splash--cta"
+            = link_to "Register Now", "#", class: "cta"
 
     = yield
+
+    footer
+      .container
+        .row
+          .col-sm-6
+            div
+              ' Brought to you by:
+              = link_to "@winstonyw", "https://www.twitter.com/winstonyw"
+              ',
+              = link_to "@tgx_world", "https://www.twitter.com/tgx_world"
+            div
+              => link_to "@reddotrubyconf", "https://www.twitter.com/reddotrubyconf"
+              ' /
+              => link_to "Facebook", "https://www.facebook.com/reddotrubyconf"
+              ' /
+              => link_to "Flickr", "https://www.flickr.com/photos/reddotrubyconf"
+          .col-sm-6.text-right
+            div Previous Editions
+            div
+              => link_to "RDRC 2013", "https://rdrc2013.herokuapp.com"
+              ' /
+              => link_to "RDRC 2014", "https://rdrc2014.herokuapp.com"
+              ' /
+              => link_to "RDRC 2015", "https://rdrc2015.herokuapp.com"
+

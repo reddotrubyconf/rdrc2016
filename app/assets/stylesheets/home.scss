@@ -36,7 +36,7 @@
 }
 
 .splash {
-  padding: 150px 0;
+  padding: 200px 0;
 
   background-image: asset-url('splash.jpg');
   background-size: cover;
@@ -67,44 +67,6 @@
 
   .splash--cta {
     text-align: center;
-
-    a {
-      display: inline-block;
-      position: relative;
-      margin-top: 20px;
-      padding: 10px 20px;
-
-      border: 1px white solid;
-      border-radius: 4px;
-      background-color: rgba(255, 255, 255, 0.6);
-
-      font-size: 180%;
-      font-weight: 600;
-      color: #333333;
-
-      text-decoration: none;
-      text-shadow: 1px 1px #bbb;
-
-      box-shadow: 1px 0px #bbbbbb, 0px 1px #eeeeee,
-                  2px 1px #bbbbbb, 1px 2px #eeeeee,
-                  3px 2px #bbbbbb, 2px 3px #eeeeee,
-                  4px 3px #bbbbbb, 3px 4px #eeeeee,
-                  5px 4px #bbbbbb, 4px 5px #eeeeee,
-                  6px 5px #bbbbbb, 5px 6px #eeeeee;
-
-      &:focus, &:hover {
-        background-color: rgba(255, 255, 255, 0.8);
-        color: #333;
-
-        box-shadow: 1px 0px #bbbbbb, 0px 1px #eeeeee,
-                    2px 1px #bbbbbb, 1px 2px #eeeeee,
-                    3px 2px #bbbbbb, 2px 3px #eeeeee,
-                    4px 3px #bbbbbb, 3px 4px #eeeeee;
-
-        transform: translate(2px, 2px);
-      }
-
-    }
   }
 }
 
@@ -123,5 +85,137 @@
     .splash--cta {
       text-align: left;
     }
+  }
+}
+
+#speakers {
+  .speaker {
+    img {
+      width: 80%;
+      margin: 0 10%;
+
+      border-radius: 4px;
+      box-shadow: 1px 0px #46b1a8, 0px 1px #4ECDC4,
+                  2px 1px #46b1a8, 1px 2px #4ECDC4,
+                  3px 2px #46b1a8, 2px 3px #4ECDC4,
+                  4px 3px #46b1a8, 3px 4px #4ECDC4,
+                  5px 4px #46b1a8, 4px 5px #4ECDC4,
+                  6px 5px #46b1a8, 5px 6px #4ECDC4,
+                  7px 6px #46b1a8, 6px 7px #4ECDC4,
+                  8px 7px #46b1a8, 7px 8px #4ECDC4;
+    }
+
+    &--info {
+      padding: 15px 0;
+
+      text-align: center;
+    }
+
+    &--name {
+      font-size: 140%;
+      font-weight: 600;
+
+      text-shadow: 1px 1px #ccc;
+    }
+
+    &--tagline {
+      font-size: 120%;
+      font-style: italic;
+    }
+  }
+
+  .more {
+    margin-top: 40px;
+
+    font-size: 120%;
+    font-style: italic;
+  }
+}
+
+#venue {
+  .venue--name,
+  .venue--address {
+    text-align: center;
+  }
+
+  .venue--name {
+    font-size: 180%;
+  }
+
+  .venue--address {
+    font-size: 110%;
+    color: #999999;
+  }
+
+  .venue--direction {
+    margin-top: 12.5px;
+    padding: 0 10px 0 20px;
+
+    .cc, .ew {
+      padding: 3px 5px;
+      color: white;
+    }
+
+    .cc {
+      border-radius: 3px 0 0 3px;
+      background-color: #f2ad27;
+    }
+
+    .ew {
+      border-radius: 0 3px 3px 0;
+      background-color: #189e4a;
+    }
+  }
+
+  .venue--map {
+    margin-top: 25px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 400px;
+
+    pointer-events: none;
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  #venue {
+    .venue--name,
+    .venue--address {
+      text-align: right;
+    }
+  }
+}
+
+#cta {
+  padding: 35px 0 30px;
+
+  background: #FF6B6B;
+
+  text-align: center;
+
+  p {
+    font-size: 125%;
+    color: white;
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  #cta {
+    p {
+      font-size: 215%;
+      line-height: 3;
+    }
+  }
+}
+
+footer {
+  padding: 20px 0;
+
+  font-size: 95%;
+
+  div {
+    padding: 2px 0;
   }
 }

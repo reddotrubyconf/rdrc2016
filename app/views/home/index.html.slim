@@ -1,1 +1,75 @@
+section#speakers
+  .container
+    h2.section-header
+      ' Speakers
+      .line
+    .row
+      - @speakers.each do |speaker|
+        .col-sm-3
+          .speaker
+            .speaker--avatar
+              = image_tag speaker.avatar
+            .speaker--info
+              .speaker--name
+                = speaker.name
+              .speaker--tagline
+                = speaker.tagline
+    .row
+      .col-sm-12.text-center
+        .more and more to be announced soon..
+
+hr.section-divider
+
+section#venue
+  .container
+    h2.section-header
+      ' Venue
+      .line
+
+    .row
+      .col-sm-6
+        .venue--name
+          ' Matrix (Biopolis), Singapore
+        .venue--address
+          ' 30 Biopolis Street, Singapore 138671
+      .col-sm-6
+        ul.venue--direction
+          li
+            span.cc CC22
+            span.ew EW21
+            ' &nbsp; Buona Vista is the nearest station to the venue
+          li Take Exit D at Buona Vista and walk 500m to Matrix (Biopolis)
+  .venue--map
+    iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.785310671736!2d103.79004135040948!3d1.3038349990443774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1a43e3cb7111%3A0x9965b36cbf8d88c3!2sBiopolis!5e0!3m2!1sen!2ssg!4v1453434417662" frameborder="0" style="border:0" allowfullscreen=""
+
+hr.section-divider
+
+section#sponsors
+  .container
+    h2.section-header
+      ' Sponsors
+      .line
+    .row
+      .col-sm-12.text-center
+        p We are looking for sponsors! Would you like to help grow the Ruby community and showcase your company at the same time?
+        p Please #{link_to 'get in touch with us at organisers@reddotrubyconf.com', 'mailto:organisers@reddotrubyconf.com'} or #{link_to 'download our Sponsor Kit', '/sponsorkit.pdf'} for more information. Thank you!
+
+hr.section-divider
+
+section#code-of-conduct
+  .container
+    h2.section-header
+      ' Code of Conduct
+      .line
+
+section#cta
+  .container
+    .row
+      .col-sm-7.col-sm-offset-1
+        p
+          ' Get your tickets early for Early Bird discounts.
+      .col-sm-3
+        = link_to "Register Now", "#", class: "cta"
+
+section#photos
 
