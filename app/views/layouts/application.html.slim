@@ -5,10 +5,47 @@ html
     = csrf_meta_tags
     = action_cable_meta_tag
 
-    meta property="og:title" content="RedDotRubyConf 2016 - June 23 and 24, Singapore"
-    meta property="og:image" content="https://cloud.githubusercontent.com/assets/1000669/12230939/b3daac1e-b88e-11e5-813d-28e0ff9a7eaf.jpg"
+    meta charset="utf-8"
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+    - set_meta_tags default_meta_tags
 
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
+
   body
+    nav class="navbar navbar-fixed-top"
+      .container
+        .navbar-header
+          button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"
+            span class="icon-bar"
+            span class="icon-bar"
+            span class="icon-bar"
+          a class="navbar-brand" href="/" RedDotRubyConf 2016
+        #navbar class="navbar-collapse collapse"
+          ul class="nav navbar-nav"
+            li= link_to "Speakers" , "#"
+            li= link_to "Location" , "#"
+            li= link_to "Sponsors" , "#"
+            li= link_to "Code of Conduct" , "#"
+          ul class="nav navbar-nav navbar-right"
+            li= link_to "Register Now" , "#"
+    section.splash
+      .splash--background
+      .container
+        .row
+          .col-sm-12.text-center
+            .splash--title
+              = image_tag "logo-icon"
+              div RedDotRubyConf
+        .row
+          .col-sm-6.splash--blurb
+            p
+              ' Two Days • Single Track
+              br
+              ' June 23 and 24, 2016
+              br
+              ' Singapore
+          .col-sm-6.splash--cta
+            = link_to "Register Now", "#", class: "splash--cta"
+
     = yield

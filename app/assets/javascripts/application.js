@@ -13,4 +13,14 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require bootstrap-sprockets
 //= require_tree .
+
+
+$(window).scroll(function() {
+  if ($(".navbar").offset().top > 100) {
+    $(".navbar").addClass("fixed");
+  } else {
+    $(".navbar").removeClass("fixed");
+  }
+});
