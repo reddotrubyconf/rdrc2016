@@ -28,7 +28,7 @@ module ApplicationHelper
       "The largest Ruby conference in South East Asia is happening on 23 and 24 June 2016.",
       "website",
       "summary_large_image",
-      image_url("social-media.jpg")
+      image_url("social-media-#{[1,2].sample}.jpg")
     )
   end
 end
