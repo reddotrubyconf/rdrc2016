@@ -36,7 +36,7 @@
 }
 
 .splash {
-  padding: 200px 0;
+  padding: 150px 0;
 
   background-image: asset-url('splash.jpg');
   background-size: cover;
@@ -72,6 +72,8 @@
 
 @media (min-width: $screen-sm-min) {
   .splash {
+    padding: 200px 0;
+
     .splash--title {
       font-size: 550%;
     }
