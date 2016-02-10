@@ -188,10 +188,16 @@
   }
 }
 
-#cta {
-  padding: 35px 0 30px;
+#cfp {
+  background: #4ECDC4;
+}
 
+#cta {
   background: #FF6B6B;
+}
+
+#cfp, #cta {
+  padding: 35px 0 30px;
 
   text-align: center;
 
@@ -202,7 +208,7 @@
 }
 
 @media (min-width: $screen-sm-min) {
-  #cta {
+  #cfp, #cta {
     p {
       font-size: 215%;
       line-height: 3;
