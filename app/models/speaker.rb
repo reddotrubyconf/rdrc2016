@@ -33,22 +33,22 @@ class Speaker
           :github   => "https://github.com/tenderlove",
           :topic    => "Keynote"
         },
-      chancancode:
-        {
-          :id       => :chancancode,
-          :name     => "Godfrey Chan",
-          :avatar   => "speakers/chancancode.png",
-          :tagline  => "Rails Core, Tilde",
-          :twitter  => "https://twitter.com/chancancode",
-          :github   => "https://github.com/chancancode",
-          :topic    => "Keynote"
-        },
       hone02:
         {
           :id       => :hone02,
           :name     => "Terence Lee",
           :avatar   => "speakers/hone02.jpg",
           :tagline  => "Ruby Core, Heroku",
+          :twitter  => "https://twitter.com/chancancode",
+          :github   => "https://github.com/chancancode",
+          :topic    => "Keynote"
+        },
+      chancancode:
+        {
+          :id       => :chancancode,
+          :name     => "Godfrey Chan",
+          :avatar   => "speakers/chancancode.png",
+          :tagline  => "Rails Core, Tilde",
           :twitter  => "https://twitter.com/chancancode",
           :github   => "https://github.com/chancancode",
           :topic    => "Keynote"
