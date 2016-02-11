@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root to: "home#index"
+  get "/code-of-conduct", to: "home#code_of_conduct"
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
