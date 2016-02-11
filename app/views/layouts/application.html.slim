@@ -5,10 +5,77 @@ html
     = csrf_meta_tags
     = action_cable_meta_tag
 
-    meta property="og:title" content="RedDotRubyConf 2016 - June 23 and 24, Singapore"
-    meta property="og:image" content="https://cloud.githubusercontent.com/assets/1000669/12230939/b3daac1e-b88e-11e5-813d-28e0ff9a7eaf.jpg"
+    meta charset="utf-8"
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+
+    = display_meta_tags default_meta_tags
 
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
+
   body
+    nav class="navbar navbar-fixed-top"
+      .container
+        .navbar-header
+          button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"
+            span class="icon-bar"
+            span class="icon-bar"
+            span class="icon-bar"
+          a class="navbar-brand" href="/" RedDotRubyConf 2016
+        #navbar class="navbar-collapse collapse"
+          ul class="nav navbar-nav"
+            li= link_to "Speakers" , "#speakers"
+            li= link_to "Venue"    , "#venue"
+            li= link_to "Sponsors" , "#sponsors"
+            li= link_to "Code of Conduct" , "#code-of-conduct"
+          ul class="nav navbar-nav navbar-right"
+            li= link_to "Register Now" , "https://www.ticketbase.com/events/reddotrubyconf-2016"
+    section.splash
+      .splash--background
+      .container
+        .row
+          .col-sm-12.text-center
+            .splash--title
+              = image_tag "logo-icon"
+              div RedDotRubyConf
+        .row
+          .col-sm-6.splash--blurb
+            p
+              ' Two Days • Single Track
+              br
+              ' June 23 and 24, 2016
+              br
+              ' Singapore
+          .col-sm-6.splash--cta
+            = link_to "Register Now", "https://www.ticketbase.com/events/reddotrubyconf-2016", class: "cta"
+
     = yield
+
+    footer
+      .container
+        .row
+          .col-sm-6
+            div
+              ' A
+              => link_to "Jolly Good Code", "http://www.jollygoodcode.com"
+              ' Production
+            div
+              ' Organised by:
+              = link_to "@winstonyw", "https://www.twitter.com/winstonyw"
+              ',
+              = link_to "@tgx_world", "https://www.twitter.com/tgx_world"
+          .col-sm-6.text-right
+            div
+              => link_to "@reddotrubyconf", "https://www.twitter.com/reddotrubyconf"
+              ' /
+              => link_to "Facebook", "https://www.facebook.com/reddotrubyconf"
+              ' /
+              => link_to "Flickr", "https://www.flickr.com/photos/reddotrubyconf"
+            div
+              ' Previously
+              => link_to "RDRC 2013", "https://rdrc2013.herokuapp.com"
+              ' /
+              => link_to "RDRC 2014", "https://rdrc2014.herokuapp.com"
+              ' /
+              => link_to "RDRC 2015", "https://rdrc2015.herokuapp.com"
+

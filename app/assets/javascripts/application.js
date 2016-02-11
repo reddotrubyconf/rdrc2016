@@ -13,4 +13,23 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require bootstrap-sprockets
 //= require_tree .
+
+$(document).ready(function() {
+  $(window).scroll(function() {
+    if ($(".navbar").offset().top > 100) {
+      $(".navbar").addClass("fixed");
+    } else {
+      $(".navbar").removeClass("fixed");
+    }
+  });
+
+  $(".venue--map").on("click", function () {
+    $(".venue--map iframe").css("pointer-events", "auto");
+  });
+
+  $(".venue--map").on("mouseleave", function () {
+    $(".venue--map iframe").css("pointer-events", "none");
+  });
+});
