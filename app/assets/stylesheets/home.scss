@@ -67,6 +67,10 @@
 
   .splash--cta {
     text-align: center;
+
+    a.cta {
+      margin-top: 20px;
+    }
   }
 }
 
@@ -199,7 +203,7 @@
 }
 
 #cfp, #cta {
-  padding: 35px 0 30px;
+  padding: 35px 0 40px;
 
   text-align: center;
 
@@ -212,8 +216,8 @@
 @media (min-width: $screen-sm-min) {
   #cfp, #cta {
     p {
-      margin-top: 24px;
-      font-size: 215%;
+      margin-top: 10px;
+      font-size: 180%;
     }
   }
 }
