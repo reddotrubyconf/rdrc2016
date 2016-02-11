@@ -30,7 +30,7 @@
 
     a:hover {
       color: white;
-      background-color: red !important;
+      background-color: #FF6B6B !important;
     }
   }
 }
@@ -212,8 +212,8 @@
 @media (min-width: $screen-sm-min) {
   #cfp, #cta {
     p {
+      margin-top: 24px;
       font-size: 215%;
-      line-height: 3;
     }
   }
 }
