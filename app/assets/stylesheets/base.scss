@@ -12,11 +12,27 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $head-font;
 }
 
+h2 {
+  padding: 65px 0 50px;
+  font-size: 300%;
+
+  .line {
+    background: #C7F464;
+  }
+}
+
+h3 {
+  padding-top: 25px;
+  font-size: 180%;
+
+  .line {
+    background: #4ECDC4;
+  }
+}
+
 .section-header {
   margin: 0;
-  padding: 65px 0 50px;
 
-  font-size: 300%;
   font-weight: 900;
 
   text-align: center;
@@ -28,8 +44,6 @@ h1, h2, h3, h4, h5, h6 {
     height: 10px;
 
     margin: 10px auto;
-
-    background: #C7F464;
   }
 }
 
