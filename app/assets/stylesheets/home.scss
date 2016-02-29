@@ -222,6 +222,19 @@
   }
 }
 
+#sponsors {
+  .sponsors--title {
+    margin-top: 25px;
+    font-size: 180%;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .sponsor {
+    img { width: 100%; }
+  }
+}
+
 #code-of-conduct {
   margin-bottom: 40px;
 }
