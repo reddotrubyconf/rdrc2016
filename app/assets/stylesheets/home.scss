@@ -231,6 +231,11 @@
   }
 
   .sponsor {
+    display: table-cell;
+    height: 150px;
+
+    vertical-align: middle;
+
     img { width: 100%; }
   }
 }
