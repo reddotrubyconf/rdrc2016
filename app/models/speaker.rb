@@ -53,6 +53,16 @@ class Speaker
           :github   => "https://github.com/chancancode",
           :topic    => "Keynote"
         },
+      kerrizor:
+        {
+          :id       => :kerrizor,
+          :name     => "Kerri Miller",
+          :avatar   => "speakers/kerrizor.png",
+          :tagline  => "Engineer, GitHub",
+          :twitter  => "https://twitter.com/kerrizor",
+          :github   => "https://github.com/kerrizor",
+          :topic    => "Keynote"
+        },
     }
   end
 end

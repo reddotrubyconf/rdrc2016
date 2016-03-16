@@ -13,8 +13,18 @@ section#speakers
       ' Speakers
       .line
     .row
-      - @speakers.each do |speaker|
-        .col-sm-3
+      .col-sm-12.text-center
+        - Speaker.find_by_identifiers(:matz, :tenderlove).each do |speaker|
+          .speaker
+            .speaker--avatar
+              = image_tag speaker.avatar
+            .speaker--info
+              .speaker--name
+                = speaker.name
+              .speaker--tagline
+                = speaker.tagline
+      .col-sm-12.text-center.m-t
+        - Speaker.find_by_identifiers(:hone02, :chancancode, :kerrizor).each do |speaker|
           .speaker
             .speaker--avatar
               = image_tag speaker.avatar

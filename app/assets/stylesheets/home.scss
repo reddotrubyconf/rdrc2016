@@ -96,6 +96,9 @@
 
 #speakers {
   .speaker {
+    display: inline-block;
+    width: 250px;
+
     img {
       width: 80%;
       margin: 0 10%;
