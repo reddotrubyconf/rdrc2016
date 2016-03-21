@@ -71,19 +71,38 @@ section#sponsors
         p We are looking for sponsors! Would you like to help grow the Ruby community and showcase your company at the same time?
         p Please #{link_to 'get in touch with us at organisers@reddotrubyconf.com', 'mailto:organisers@reddotrubyconf.com'} or #{link_to 'download our Sponsor Kit', '/sponsorkit.pdf'} for more information. Thank you!
 
-    .row
+    .row.text-center
+      .col-sm-12
+        h3.section-header
+          ' Gold
+          .line
+      .col-sm-4.col-sm-offset-2
+        .sponsor
+          = link_to 'https://github.com/' do
+            = image_tag 'sponsors/github.png'
+      .col-sm-4
+        .sponsor
+          = link_to 'https://hired.com.sg/' do
+            = image_tag 'sponsors/hired.jpg'
+
+    .row.text-center
       .col-sm-12.text-center
         h3.section-header
           ' Silver
           .line
-      .col-sm-4.col-sm-offset-2
-        .sponsor
-          = link_to 'https://www.flowhero.io' do
-            = image_tag 'sponsors/flowhero-io.png'
-      .col-sm-4
-        .sponsor
-          = link_to 'https://www.grain.com.sg' do
-            = image_tag 'sponsors/grain.png'
+      .col-sm-10.col-sm-offset-1
+        .col-sm-4
+          .sponsor
+            = link_to 'https://www.flowhero.io' do
+              = image_tag 'sponsors/flowhero-io.png'
+        .col-sm-4
+          .sponsor
+            = link_to 'https://www.grain.com.sg' do
+              = image_tag 'sponsors/grain.png'
+        .col-sm-4
+          .sponsor
+            = link_to 'https://www.paypal.com/sg/webapps/mpp/home' do
+              = image_tag 'sponsors/paypal.png'
 
 hr.section-divider
 
