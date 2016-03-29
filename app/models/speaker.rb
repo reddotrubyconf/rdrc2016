@@ -28,7 +28,7 @@ class Speaker
           :id       => :tenderlove,
           :name     => "Aaron Patterson",
           :avatar   => "speakers/tenderlove.png",
-          :tagline  => "Ruby & Rails Core, Red Hat",
+          :tagline  => "Ruby & Rails Core, GitHub",
           :twitter  => "https://twitter.com/tenderlove",
           :github   => "https://github.com/tenderlove",
           :topic    => "Keynote"
