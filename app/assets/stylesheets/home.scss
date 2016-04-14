@@ -197,15 +197,12 @@
   }
 }
 
-#cfp {
-  background: #4ECDC4;
-}
 
 #cta {
   background: #FF6B6B;
 }
 
-#cfp, #cta {
+#cta {
   padding: 35px 0 40px;
 
   text-align: center;
@@ -217,7 +214,7 @@
 }
 
 @media (min-width: $screen-sm-min) {
-  #cfp, #cta {
+  #cta {
     p {
       margin-top: 10px;
       font-size: 180%;
@@ -245,10 +242,6 @@
 
 #code-of-conduct {
   margin-bottom: 40px;
-}
-
-#photos {
-  padding: 20px 0;
 }
 
 footer {
