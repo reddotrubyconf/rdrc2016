@@ -24,9 +24,43 @@ section#speakers
                 = speaker.name
               .speaker--tagline
                 = speaker.tagline
+
     .row
-      .col-sm-12.text-center
-        .more and more to be announced soon..
+      .col-sm-12
+        - Speaker.speakers.except(*Speaker::KEYNOTE_SPEAKERS).each do |_, speaker|
+          - speaker = OpenStruct.new(speaker)
+
+          hr.speaker-section-divider.line
+
+          .row
+            .col-sm-12.col-md-3
+              .speaker
+                .speaker--avatar
+                  = image_tag speaker.avatar
+
+                .speaker--info
+                  .speaker--name
+                    = speaker.name
+                  .speaker--tagline
+                    = speaker.tagline
+                  .speaker--social
+                    = link_to "#{Speaker::GITHUB_URL}#{speaker.github}" do
+                      = icon('github', class: 'fa-2x')
+                    = link_to "#{Speaker::TWITTER_URL}#{speaker.twitter}" do
+                      = icon('twitter', class: 'fa-2x')
+
+            .col-sm-12.col-md-5
+              .speaker--title
+                .speaker--topic
+                  = speaker.topic
+                p.speaker--description
+                  = speaker.description
+
+            .col-sm-12.col-md-4
+              .speaker--topic
+                ' Speaker's Bio
+              p.speaker--bio
+                = speaker.bio.html_safe
 
 hr.section-divider
 

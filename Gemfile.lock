@@ -57,6 +57,8 @@ GEM
     debug_inspector (0.0.2)
     erubis (2.7.0)
     execjs (2.6.0)
+    font-awesome-sass (4.6.2)
+      sass (>= 3.2)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     heroku-deflater (0.6.2)
@@ -119,6 +121,12 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rake (11.1.1)
     sass (3.4.21)
+    sass-rails (5.0.4)
+      railties (>= 4.0.0, < 5.0)
+      sass (~> 3.1)
+      sprockets (>= 2.8, < 4.0)
+      sprockets-rails (>= 2.0, < 4.0)
+      tilt (>= 1.1, < 3)
     slim (3.0.6)
       temple (~> 0.7.3)
       tilt (>= 1.3.3, < 2.1)
@@ -162,6 +170,7 @@ DEPENDENCIES
   bootstrap-sass
   byebug
   coffee-rails (~> 4.1.0)
+  font-awesome-sass
   heroku-deflater
   jquery-rails
   meta-tags
@@ -169,6 +178,7 @@ DEPENDENCIES
   puma
   rails (>= 5.0.0.beta1, < 5.1)
   rails_12factor
+  sass-rails
   slim-rails
   spring
   turbolinks

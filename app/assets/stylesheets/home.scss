@@ -95,6 +95,11 @@
 }
 
 #speakers {
+  .speaker-section-divider {
+    height: 1px;
+    background: #C7F464;
+  }
+
   .speaker {
     display: inline-block;
     width: 250px;
@@ -130,6 +135,20 @@
     &--tagline {
       font-size: 120%;
       font-style: italic;
+    }
+
+    &--topic {
+      font-size: 130%;
+      font-weight: bold;
+      padding-bottom: 10px;
+    }
+
+    &--description, &--bio {
+      font-size: 110%;
+    }
+
+    &--social a {
+      margin-right: 7px;
     }
   }
 
