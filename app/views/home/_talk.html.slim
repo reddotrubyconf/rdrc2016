@@ -1,0 +1,11 @@
+tr.talk
+  td.talk--time.time
+    = time
+
+  td.talk--avatar
+    = link_to "##{speaker.id}" do
+      = image_tag speaker.avatar
+
+  td
+    .talk--description= speaker.topic
+    = speaker.name
