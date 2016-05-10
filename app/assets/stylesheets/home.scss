@@ -95,6 +95,12 @@
 }
 
 #speakers {
+  .anchor {
+    display:block;
+    position: relative;
+    top: -65px;
+  }
+
   .speaker-section-divider {
     height: 1px;
     background: #C7F464;
