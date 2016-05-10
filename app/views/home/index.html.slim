@@ -1,3 +1,58 @@
+section#schedule
+  .container
+    h2.section-header
+      ' Schedule
+      .line
+
+    .col-sm-5.col-md-offset-1
+      h3.text-center
+        ' Day 1, June 23 (Thursday)
+
+      table.schedule--table
+        = render "program", time: "08:15", description: "Registration", icon: "pencil"
+        = render "program", time: "09:15", description: "Opening Address", icon: "bell"
+        = render "talk", time: "09:30", speaker: Speaker.find(:matz)
+        = render "talk", time: "10:15", speaker: Speaker.find(:jason)
+        = render "program", time: "10:45", description: "Break", icon: "coffee"
+        = render "talk", time: "11:15", speaker: Speaker.find(:joy)
+        = render "talk", time: "11:45", speaker: Speaker.find(:prathamesh)
+        = render "program", time: "12:15", description: "Lunch", icon: "cultery"
+        = render "talk", time: "13:45", speaker: Speaker.find(:chancancode)
+        = render "talk", time: "14:30", speaker: Speaker.find(:kir)
+        = render "program", time: "15:00", icon: "bolt", description: "Lightning Talks"
+
+        - Speaker.find_by_identifiers(:jo, :hiroshi, :ankita, :giovanni).each do |speaker|
+          = render "lightning", speaker: speaker
+
+        = render "program", time: "15:30", description: "Break", icon: "coffee"
+        = render "talk", time: "16:00", speaker: Speaker.find(:timriley)
+        = render "talk", time: "16:30", speaker: Speaker.find(:kerrizor)
+
+    .col-sm-5
+      h3.text-center
+        ' Day 2, June 24 (Friday)
+
+      table.schedule--table
+        = render "program", time: "08:15", description: "Registration", icon: "pencil"
+        = render "program", time: "09:15", description: "Opening Address", icon: "bell"
+        = render "talk", time: "09:30", speaker: Speaker.find(:tenderlove)
+        = render "talk", time: "10:30", speaker: Speaker.find(:sayanee)
+        = render "program", time: "11:00", description: "Break", icon: "coffee"
+        = render "talk", time: "11:15", speaker: Speaker.find(:grzegorz)
+        = render "talk", time: "11:45", speaker: Speaker.find(:vipul)
+        = render "program", time: "12:15", description: "Lunch", icon: "cultery"
+        = render "talk", time: "13:45", speaker: Speaker.find(:konstantin)
+        = render "talk", time: "14:15", speaker: Speaker.find(:yasuko_ohba)
+        = render "program", time: "14:45", icon: "bolt", description: "Lightning Talks"
+
+        - Speaker.find_by_identifiers(:kenji, :jack, :yuki, :steven).each do |speaker|
+          = render "lightning", speaker: speaker
+
+        = render "program", time: "15:15", description: "Break", icon: "coffee"
+        = render "talk", time: "15:45", speaker: Speaker.find(:sameer)
+        = render "talk", time: "16:15", speaker: Speaker.find(:hone02)
+
+
 section#speakers
   .container
     h2.section-header
@@ -24,9 +79,44 @@ section#speakers
                 = speaker.name
               .speaker--tagline
                 = speaker.tagline
+
     .row
-      .col-sm-12.text-center
-        .more and more to be announced soon..
+      .col-sm-12
+        - Speaker.speakers.except(*Speaker::KEYNOTE_SPEAKERS).each do |_, speaker|
+          - speaker = OpenStruct.new(speaker)
+
+          hr.speaker-section-divider.line
+
+          .row
+            .anchor id=speaker.id
+            .col-sm-12.col-md-3.text-center
+              .speaker
+                .speaker--avatar
+                  = image_tag speaker.avatar
+
+                .speaker--info
+                  .speaker--name
+                    = speaker.name
+                  .speaker--tagline
+                    = speaker.tagline
+                  .speaker--social
+                    = link_to "#{Speaker::GITHUB_URL}#{speaker.github}" do
+                      = icon('github', class: 'fa-2x')
+                    = link_to "#{Speaker::TWITTER_URL}#{speaker.twitter}" do
+                      = icon('twitter', class: 'fa-2x')
+
+            .col-sm-12.col-md-5
+              .speaker--title
+                .speaker--topic
+                  = speaker.topic
+                p.speaker--description
+                  = speaker.description
+
+            .col-sm-12.col-md-4
+              .speaker--topic
+                ' Speaker's Bio
+              p.speaker--bio
+                = speaker.bio.html_safe
 
 hr.section-divider
 
