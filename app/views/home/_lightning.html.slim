@@ -4,6 +4,6 @@ tr.talk
     = link_to "##{speaker.id}" do
       = image_tag speaker.avatar
   td
-    .talk--description= speaker.topic
+    .talk--description= speaker.topic.titleize
     = speaker.name
 

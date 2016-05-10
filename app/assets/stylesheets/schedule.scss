@@ -33,6 +33,16 @@
       font-weight: 600;
       text-shadow: 1px 1px #ccc;
     }
+
+    &--topic {
+      a {
+        color: #333;
+      }
+
+      a:hover {
+        text-decoration: none;
+      }
+    }
   }
 
   .time {

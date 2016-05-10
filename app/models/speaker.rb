@@ -203,7 +203,7 @@ class Speaker
         {
           id: :yuki,
           lightning: true,
-          name: "Grzegorz Witek",
+          name: "Yuki Nishijima",
           avatar: "speakers/yuki.png",
           tagline: "Software Engineer, Pivotal Labs",
           twitter: "yuki24",
