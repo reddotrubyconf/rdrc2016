@@ -169,8 +169,8 @@ class Speaker
           name: "Kristine Joy Paas",
           avatar: "speakers/joy.png",
           tagline: "Web Developer, Quipper",
-          twitter: "kjcpass",
-          github: "kjcpass",
+          twitter: "kjcpaas",
+          github: "kjcpaas",
           bio: "Joy is a cat-loving Rubyist and 'student of life' based in Manila. She is currently works as a web develop at Quipper, an EdTech company. When not into coding, she engages in other enjoyable activities where she can learn new things. Recently, she into watching anime and reading manga to improve her Japanese language skills.",
           topic: "Let's Play Ruby Golf",
           description: "Professional coding means writing clear, readable, maintainable code.\n'Golf' in programming means implementing something with as short as possible code.\nGolf code is everything that a professional code shouldn't be. However, there are so many things that we can only discover by playing Ruby golf.\nIn this talk, I will share the Ruby secrets I discovered from Ruby golf, and also the extreme ingenuity that comes into play when trying to write the shortest code to solve a problem."
