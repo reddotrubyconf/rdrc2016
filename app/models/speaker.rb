@@ -181,7 +181,7 @@ class Speaker
           name: "Jason Yeo",
           avatar: "speakers/jason.png",
           tagline: "Software Engineer, SourceClear",
-          twitter: "jasonsyeo",
+          twitter: "jasonyeojs",
           github: "jsyeo",
           bio: "Jason Yeo flips bits and smashes stacks at <a href='https://www.srcclr.com'>SourceClear</a>. Some of his interests include participating in pointless discussions about type systems, writing interpreters for languages that has no real world application, bashing languages that has real world applications and embedding Easter Eggs in talk descriptions.😝",
           topic: "Slaying the Dragon",
