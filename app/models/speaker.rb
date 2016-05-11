@@ -99,8 +99,8 @@ class Speaker
           tagline: "Production Engineer, Shopify",
           twitter: "kirshatrov",
           github: "kirs",
-          bio: "Kir Shatrov is a Production Engineer at Shopify, a current maintainer of Capistrano and a Rails contributor. He coaches <a src='http://railsgirls.com/helsinki'>RailsGirls</a> and hosts the <a src='http://rubynoname.ru'>RubyNoName Podcast</a>.",
-          topic: "Building a ChatOps Framework",
+          bio: "Kir Shatrov is a Production Engineer at Shopify, a current maintainer of Capistrano and a Rails contributor. He coaches <a href='http://railsgirls.com/helsinki'>RailsGirls</a> and hosts the <a href='http://rubynoname.ru'>RubyNoName Podcast</a>.",
+          topic: "Building a ChatOps framework",
           description: "At Shopify, we run a massive ChatOps deployment that ties out Internal tools together. We’re developing a platform for the useful scripts written by developers around the company to be discoverable. The platform makes it simple for any employee to automate workflow by writing a script. I will talk about the history of ChatOps and its culture at Shopify, about the reasons behind creating our own chat framework, building the DSL and grammar rules parser, scaling ChatOps and providing the better chat experience than other frameworks have."
         },
       konstantin:
@@ -135,7 +135,7 @@ class Speaker
           tagline: "Director, BigBinary LLC",
           twitter: "vipulnsward",
           github: "vipulnsward",
-          bio: "Vipul is Director at <a src='https://www.bigbinary.com/'>BigBinary LLC</a>. He is part of Rails Team, and helps triaging issues. His spare time is spent exploring and contributing to many Open Source ruby projects, when not dabbling with React JS.\nHe has recently authored <a src='https://www.bigbinary.com/building-modern-web-applications-with-reactjs'>ReactJS by Example</a>, that does a deep walk-through of using ReactJS.\nVipul loves Ruby's vibrant community and helps in building PuneRb, is the founder of and runs RubyIndia Community.\nHe also organizes <a src='http://www.deccanrubyconf.org/'>DeccanRubyConf</a> in Pune.",
+          bio: "Vipul is Director at <a href='https://www.bigbinary.com/'>BigBinary LLC</a>. He is part of Rails Team, and helps triaging issues. His spare time is spent exploring and contributing to many Open Source ruby projects, when not dabbling with React JS.\nHe has recently authored <a href='https://www.bigbinary.com/building-modern-web-applications-with-reactjs'>ReactJS by Example</a>, that does a deep walk-through of using ReactJS.\nVipul loves Ruby's vibrant community and helps in building PuneRb, is the founder of and runs RubyIndia Community.\nHe also organizes <a href='http://www.deccanrubyconf.org/'>DeccanRubyConf</a> in Pune.",
           topic: "Speeding Up Your Front-End: 2016 Version",
           description: "Rails 5 and Sprockets 3/4, have made amazing strides in terms of performance, and dev-experience.\nSprockets adds various resolution fixes to speed it up by more that 12x, allows to use ES6/ES2015, adopts good approaches from npm, and adds experimental features like Subresource Integrity.\nOn Rails too, there are many improvements for speeding up front-end resources- Custom HTTP headers for static assets, Fragment caching improvements, ETag improvements, http_cache_forever and more.\nIn this talk, we will see how to harness many of these to speed up page loads/cache and Google Pagespeed."
         },
@@ -159,7 +159,7 @@ class Speaker
           tagline: "Technology Consultant, Ricoh Singapore",
           twitter: "sayanee_",
           github: "sayanee",
-          bio: "<a src='https://sayan.ee'>Sayanee</a> is an engineer with a focus on electronics and web technologies. She curates the developer and design community of Singapore through <a src='https://webuild.sg/'>We Build SG</a> and creates screencasts on developer tools with <a src='http://build-podcast.com/'>Build Podcast</a>. At other times, she enjoys a good workout, reading her eBooks and slowly drinking some tea.",
+          bio: "<a href='https://sayan.ee'>Sayanee</a> is an engineer with a focus on electronics and web technologies. She curates the developer and design community of Singapore through <a href='https://webuild.sg/'>We Build SG</a> and creates screencasts on developer tools with <a href='http://build-podcast.com/'>Build Podcast</a>. At other times, she enjoys a good workout, reading her eBooks and slowly drinking some tea.",
           topic: "Sense and Sensibility",
           description: "As the era of tiny low-powered connected sensors beckons, how can Ruby and Rails developers come to play a pivotal role? In this talk, we will explore the backend functionalities and features that a connected sensor will talk to and make sense of the data collected. Through the open source Rails-based framework ThingSpeak, we will explore the 3 key features such a platform requires and give practical hardware demos and code snippets. Audience participation is all welcome! So hey, let's explore and make sense together!"
         },
@@ -183,7 +183,7 @@ class Speaker
           tagline: "Software Engineer, SourceClear",
           twitter: "jasonsyeo",
           github: "jsyeo",
-          bio: "Jason Yeo flips bits and smashes stacks at <a src = 'www.srcclr.com'>SourceClear</a>. Some of his interests include participating in pointless discussions about type systems, writing interpreters for languages that has no real world application, bashing languages that has real world applications and embedding Easter Eggs in talk descriptions. Face with stuck-out tongue and tightly-closed eyes",
+          bio: "Jason Yeo flips bits and smashes stacks at <a href = 'www.srcclr.com'>SourceClear</a>. Some of his interests include participating in pointless discussions about type systems, writing interpreters for languages that has no real world application, bashing languages that has real world applications and embedding Easter Eggs in talk descriptions. Face with stuck-out tongue and tightly-closed eyes",
           topic: "Slaying the Dragon",
           description: "Learning to write a programming language is considered a rite of passage for some programmers. And, it is also the most rewarding exercise as you will learn a whole lot about programming languages in general. Many might think it's a daunting task but I will show you otherwise by showing how to implement a simple language in Ruby and compile it to Rubinius bytecode. Be warned, only the brave and true will survive. Don't you worry though, no prior knowledge of parsing, lexing and programming language theory required. And of course, don't forget to have fun."
         },
