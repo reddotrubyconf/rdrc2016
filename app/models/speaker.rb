@@ -183,7 +183,7 @@ class Speaker
           tagline: "Software Engineer, SourceClear",
           twitter: "jasonsyeo",
           github: "jsyeo",
-          bio: "Jason Yeo flips bits and smashes stacks at <a href = 'www.srcclr.com'>SourceClear</a>. Some of his interests include participating in pointless discussions about type systems, writing interpreters for languages that has no real world application, bashing languages that has real world applications and embedding Easter Eggs in talk descriptions. Face with stuck-out tongue and tightly-closed eyes",
+          bio: "Jason Yeo flips bits and smashes stacks at <a href='https://www.srcclr.com'>SourceClear</a>. Some of his interests include participating in pointless discussions about type systems, writing interpreters for languages that has no real world application, bashing languages that has real world applications and embedding Easter Eggs in talk descriptions.😝",
           topic: "Slaying the Dragon",
           description: "Learning to write a programming language is considered a rite of passage for some programmers. And, it is also the most rewarding exercise as you will learn a whole lot about programming languages in general. Many might think it's a daunting task but I will show you otherwise by showing how to implement a simple language in Ruby and compile it to Rubinius bytecode. Be warned, only the brave and true will survive. Don't you worry though, no prior knowledge of parsing, lexing and programming language theory required. And of course, don't forget to have fun."
         },
