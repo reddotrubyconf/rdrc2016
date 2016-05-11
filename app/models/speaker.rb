@@ -86,7 +86,7 @@ class Speaker
           avatar: "speakers/yasuko_ohba.png",
           tagline: "President, Everyleaf Corporation",
           twitter: "nay3",
-          github: "nay3",
+          github: "nay",
           bio: "A Ruby / Rails programmer in Tokyo, Japan. President of Everyleaf Corporation, which provides software development service mostly with Rails for clients since 2007. I have written 2 books on Ruby in Japan. A mother of a 3 year old girl.",
           topic: "Our Fight Against Super Bad Patterns in Legacy Rails Apps",
           description: 'In 2014-2015 my team migrated a series of applications from Rails 2.3.5 to 4.2.1, and Ruby 1.8 to 2.1. Our goal was to add large features, while substantially refactoring the whole system. It was a big challenge!This talk will cover the timeline of the project and talk about all the things a team performing a large migration of Ruby and Rails will need to do. Secondly, you will learn about some "super bad" Rails code patterns we encountered and how we refactored them. Real life experience distilled!',
