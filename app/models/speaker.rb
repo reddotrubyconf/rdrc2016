@@ -258,8 +258,8 @@ class Speaker
           name: "Jack Chen Songyong",
           avatar: "speakers/jack.png",
           tagline: "Technical Director, Skymatters Limited",
-          twitter: "hsbt",
-          github: "hsbt",
+          twitter: "aquajach",
+          github: "aquajach",
           bio: "Jack works at Skymatters Limited as the technical director. He is keen to open-source projects and gave talks at tech conferences (esp. Codeaholics HK). He also believes running a marathon and coding a project have so many in common.",
           topic: "Grow from Small Simple Steps Forward",
           description: "Many great developers love to contribute to open source code base. But you don't have to be very experienced before doing so. This short talk is to take one of my pull requests to a Ruby gem library as an example, from the incentive, the conversations between maintainers and me, to what I learnt."
