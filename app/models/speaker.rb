@@ -145,8 +145,8 @@ class Speaker
           name: "Prathamesh Sonpatki",
           avatar: "speakers/prathamesh.png",
           tagline: "Director, BigBinary LLC",
-          twitter: "prathamesh-sonpatki",
-          github: "_cha1tanya",
+          twitter: "_cha1tanya",
+          github: "prathamesh-sonpatki",
           bio: "Prathamesh is Director at BigBinary. He builds web apps using Rails and React.js!. He is interested in open source and contribute to many Ruby and Rails related projects. He likes Emacs operating system a lot and can be found constantly tweaking his .emacs.d",
           topic: "Secrets of Testing Rails 5 Apps",
           description: "Testing Rails 5 apps has become better experience out of the box. Rails has also become smarter by introducing the test runner. Now we can't complain that about not able to run a single test or not getting coloured output. A lot of effort gone into making tests especially integration tests run faster.\nCome and join me as we will commence the journey to uncover the secrets of testing Rails 5 apps."
