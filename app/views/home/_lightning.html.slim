@@ -3,7 +3,7 @@ tr.talk
   td.talk--avatar
     = link_to "##{speaker.id}" do
       = image_tag speaker.avatar
-  td
-    .talk--description= speaker.topic.titleize
-    = speaker.name
-
+  td.talk--topic
+    = link_to "##{speaker.id}" do
+      .talk--description= speaker.topic
+      = speaker.name

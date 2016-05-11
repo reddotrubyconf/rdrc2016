@@ -72,11 +72,11 @@ class Speaker
           id: :timriley,
           name: "Tim Riley",
           avatar: "speakers/timriley.png",
-          tagline: "Partner, IceLab",
+          tagline: "Partner, Icelab",
           twitter: "timriley",
           github: "timriley",
           bio: "Tim is a partner at Australian design agency Icelab, and a core developer of dry-rb. He’s excited about advancing the state of web development in Ruby.",
-          topic: "Next-generation Ruby web apps with dry-rb, ROM, and Roda",
+          topic: "Next Generation Ruby Web Apps with dry-rb, ROM, and Roda",
           description: "If you’ve ever yearned for more than the Rails way, come along and learn how a small set of tools and techniques can bring joy to your Ruby web app development, from the smallest beginnings through to the most complex of codebases. Discover how concepts like functional programming, immutability, strict typing, dependency injection and object composition can actually be easy and natural in Ruby (yes, really!), and how they will make your web app a pleasure to build, test and extend."
         },
       yasuko_ohba:
@@ -100,7 +100,7 @@ class Speaker
           twitter: "kirshatrov",
           github: "kirs",
           bio: "Kir Shatrov is a Production Engineer at Shopify, a current maintainer of Capistrano and a Rails contributor. He coaches <a src='http://railsgirls.com/helsinki'>RailsGirls</a> and hosts the <a src='http://rubynoname.ru'>RubyNoName Podcast</a>.",
-          topic: "Building a ChatOps framework",
+          topic: "Building a ChatOps Framework",
           description: "At Shopify, we run a massive ChatOps deployment that ties out Internal tools together. We’re developing a platform for the useful scripts written by developers around the company to be discoverable. The platform makes it simple for any employee to automate workflow by writing a script. I will talk about the history of ChatOps and its culture at Shopify, about the reasons behind creating our own chat framework, building the DSL and grammar rules parser, scaling ChatOps and providing the better chat experience than other frameworks have."
         },
       konstantin:
@@ -112,7 +112,7 @@ class Speaker
           twitter: "konstantinhaase",
           github: "rkh",
           bio: "Co-Founder and CTO at Travis CI, former opera star",
-          topic: "How we replaced salary negotiations with a Sinatra app",
+          topic: "How We Replaced Salary Negotiations with a Sinatra App",
           description: "Let's talk about salaries, diversity, career development, getting compensated in gold and silver, paying taxes in livestock and Ruby code.\nFor the last year, we at Travis CI have been working on a new salary system to determine how much we pay whom, when employees get raises and a whole range of other things. After lots of back and forth, we ended up with a Sinatra application to solve salary questions.\nExpect to explore the topic from many different angles and levels. We'll look at decisions, realisations and implications, as well as interesting parts of the implementation."
         },
       sameer:
@@ -136,7 +136,7 @@ class Speaker
           twitter: "vipulnsward",
           github: "vipulnsward",
           bio: "Vipul is Director at <a src='https://www.bigbinary.com/'>BigBinary LLC</a>. He is part of Rails Team, and helps triaging issues. His spare time is spent exploring and contributing to many Open Source ruby projects, when not dabbling with React JS.\nHe has recently authored <a src='https://www.bigbinary.com/building-modern-web-applications-with-reactjs'>ReactJS by Example</a>, that does a deep walk-through of using ReactJS.\nVipul loves Ruby's vibrant community and helps in building PuneRb, is the founder of and runs RubyIndia Community.\nHe also organizes <a src='http://www.deccanrubyconf.org/'>DeccanRubyConf</a> in Pune.",
-          topic: "Speeding up your Front-End: 2016 version",
+          topic: "Speeding Up Your Front-End: 2016 Version",
           description: "Rails 5 and Sprockets 3/4, have made amazing strides in terms of performance, and dev-experience.\nSprockets adds various resolution fixes to speed it up by more that 12x, allows to use ES6/ES2015, adopts good approaches from npm, and adds experimental features like Subresource Integrity.\nOn Rails too, there are many improvements for speeding up front-end resources- Custom HTTP headers for static assets, Fragment caching improvements, ETag improvements, http_cache_forever and more.\nIn this talk, we will see how to harness many of these to speed up page loads/cache and Google Pagespeed."
         },
       prathamesh:
@@ -148,7 +148,7 @@ class Speaker
           twitter: "prathamesh-sonpatki",
           github: "_cha1tanya",
           bio: "Prathamesh is Director at BigBinary. He builds web apps using Rails and React.js!. He is interested in open source and contribute to many Ruby and Rails related projects. He likes Emacs operating system a lot and can be found constantly tweaking his .emacs.d",
-          topic: "Secrets of Testing Rails 5 apps",
+          topic: "Secrets of Testing Rails 5 Apps",
           description: "Testing Rails 5 apps has become better experience out of the box. Rails has also become smarter by introducing the test runner. Now we can't complain that about not able to run a single test or not getting coloured output. A lot of effort gone into making tests especially integration tests run faster.\nCome and join me as we will commence the journey to uncover the secrets of testing Rails 5 apps."
         },
       sayanee:
@@ -205,12 +205,12 @@ class Speaker
           lightning: true,
           name: "Yuki Nishijima",
           avatar: "speakers/yuki.png",
-          tagline: "Software Engineer, Pivotal Labs",
+          tagline: "Software Engineer, Pivotal",
           twitter: "yuki24",
           github: "yuki24",
           bio: "Yuki was raised in Tokyo and has worked for Pivotal Labs in New York since 2013. He moved back to Tokyo in August 2015 as one of the founding members of Pivotal Labs Tokyo. He is a Ruby committer, the creator of the did_you_mean gem, a maintainer of the kaminari gem, and a frequent contributor to many open source projects including Rails.",
-          topic: "20 tools and techniques that make you more creative",
-          description: "Have you ever been frustrated because you needed to do so many things just to get a small task done? Ever wonder what others do to do the same? Here are tools and techniques that can make you more creative! In this talk, I'll share with you a variety of tools and techniques that can speed you up, from Ruby and Rails features, command line tools, shell scripting, browser extensions, keyboard shortcuts, to Mac apps.\nYou are a beginner? Or a have more than a decade of experience? No problem! You'll learn at least one technique you don't know yet that you can start using right away!"
+          topic: "20 Tools and Techniques that Make You More Creative",
+          description: "Have you ever been frustrated because you needed to do many things to get a small task done? Here are tools and techniques that can make you more creative! In this talk, I'll share with you  ways to speed you up, from Ruby and Rails features, command line tools, shell scripting, browser extensions, keyboard shortcuts, to Mac apps.\nYou are a beginner? Or have more than a decade of experience? No problem! You'll learn at least one technique you don't know yet that you can start using right away!"
         },
       jo:
         {
@@ -235,7 +235,7 @@ class Speaker
           twitter: "giosakti",
           github: "giosakti",
           bio: "Gio is software developer from Jakarta, Indonesia whom currently works for two startups; Starqle and Virkea that mostly do enterprise software developments. He also co-organizes local Ruby and Javascript developers community. When not coding, he loves doing sports, such as watching live football and tennis on TV, playing football games on PC and obviously reading fans banter on twitter.",
-          topic: "Flexible Authorization : Storing And Managing Rules in DB",
+          topic: "Flexible Authorization : Storing and Managing Rules in DB",
           description: "Many excellent authorization system already exist as gems, however most of them left the implementation detail of storing authorization rules in database up for grabs. Storing them in database is important because it enables end user to configure it by themselves rather than depending on the developers to manage them.\nLearn how you can effectively store and manage authorization rules on database, effectively utilize policy-based authorization system such as Pundit for this purpose and learn about database design that can handle authorization better."
         },
       hiroshi:
