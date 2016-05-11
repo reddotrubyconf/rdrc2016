@@ -121,7 +121,7 @@ class Speaker
           name: "Sameer Deshmukh",
           avatar: "speakers/sameer.png",
           tagline: "Undergraduate, University of Pune, India",
-          twitter: nil,
+          twitter: "v0dro",
           github: "v0dro",
           bio: "Sameer is an undergraduate student at University of Pune, India. He is a contributor to the Ruby Science Foundation, where he helps build scientific computation tools in Ruby. He is currently maintaining daru, a library for data analysis and manipulation in Ruby. He enjoys spending spare time with friends, books and his bass guitar.",
           topic: "Scientific Computing in Ruby",
