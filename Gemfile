@@ -25,9 +25,18 @@ end
 
 group :development, :test do
   gem "byebug"
+  gem "rspec-rails", git: "https://github.com/rspec/rspec-rails.git"
+  gem "rspec-core", git: "https://github.com/rspec/rspec-core.git"
+  gem "rspec-support", git: "https://github.com/rspec/rspec-support.git"
+  gem "rspec-expectations", git: "https://github.com/rspec/rspec-expectations.git"
+  gem "rspec-mocks", git: "https://github.com/rspec/rspec-mocks.git"
 end
 
 group :development do
   gem "web-console", "~> 3.0"
   gem "spring"
+end
+
+group :test do
+  gem "capybara"
 end
