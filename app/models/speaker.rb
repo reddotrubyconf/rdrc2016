@@ -300,8 +300,8 @@ class Speaker
           twitter: "zyunnosuke",
           github: "morizyun",
           bio: "I am Japanese software developer and a passionate Rubyist since 2012 / Ruby 1.9.3. I write a blog which is fairly well-known in the Japanese Ruby community: http://morizyun.github.io/ Recently I sometimes present at local events in Japan, a few of my presentations include: https://speakerdeck.com/morizyun I work at M3, Inc. a Japan-based global company focused on improving medicine in Japan and worldwide, developing services for doctors.",
-          topic: "Learning Through Blogging: Benefits by Blog about Ruby",
-          description: "Sharing own knowledge is very important.\nI have been writing a blog which is fairly well-known in the Japanese Ruby community and received many benefits of doing so:\nBlog-writing supports the accumulation of my own knowledge\nGiving presentation provides many opportunities\nSharing idea with our coworkers provides positive motivation to learn\nI would like to talk about my positive experience!"
+          topic: "Learning Through Blogging: Ruby Blogging Benefits",
+          description: "Sharing one's own knowledge is very important. I have been writing a blog which is fairly well-known in the Japanese Ruby community, and received many benefits in doing so. Blog-writing supports the accumulation of my own knowledge. Giving presentations provides many opportunities. Sharing ideas with our coworkers provides positive motivation to learn. I would like to talk about my positive experience!"
         },
     }
   end
