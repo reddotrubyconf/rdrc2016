@@ -5,4 +5,7 @@ class HomeController < ApplicationController
 
   def code_of_conduct
   end
+
+  def accommodation_partners
+  end
 end
