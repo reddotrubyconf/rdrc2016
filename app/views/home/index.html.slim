@@ -53,72 +53,6 @@ section#schedule
         = render "talk"   , time: "16:15", speaker: Speaker.find(:hone02)
         = render "program", time: "19:00", description: "After Party", icon: "beer"
 
-
-section#speakers
-  .container
-    h2.section-header
-      ' Speakers
-      .line
-    .row
-      .col-sm-12.text-center
-        - Speaker.find_by_identifiers(:matz, :tenderlove).each do |speaker|
-          .speaker
-            .speaker--avatar
-              = image_tag speaker.avatar
-            .speaker--info
-              .speaker--name
-                = speaker.name
-              .speaker--tagline
-                = speaker.tagline
-      .col-sm-12.text-center.m-t
-        - Speaker.find_by_identifiers(:hone02, :chancancode, :kerrizor).each do |speaker|
-          .speaker
-            .speaker--avatar
-              = image_tag speaker.avatar
-            .speaker--info
-              .speaker--name
-                = speaker.name
-              .speaker--tagline
-                = speaker.tagline
-
-    .row
-      .col-sm-12
-        - Speaker.speakers.except(*Speaker::KEYNOTE_SPEAKERS).each do |_, speaker|
-          - speaker = OpenStruct.new(speaker)
-
-          hr.speaker-section-divider.line
-
-          .row
-            .anchor id=speaker.id
-            .col-sm-12.col-md-3.text-center
-              .speaker
-                .speaker--avatar
-                  = image_tag speaker.avatar
-
-                .speaker--info
-                  .speaker--name
-                    = speaker.name
-                  .speaker--tagline
-                    = speaker.tagline
-                  .speaker--social
-                    = link_to "#{Speaker::GITHUB_URL}#{speaker.github}" do
-                      = icon('github', class: 'fa-2x')
-                    = link_to "#{Speaker::TWITTER_URL}#{speaker.twitter}" do
-                      = icon('twitter', class: 'fa-2x')
-
-            .col-sm-12.col-md-5
-              .speaker--title
-                .speaker--topic
-                  = speaker.topic
-                p.speaker--description
-                  = speaker.description
-
-            .col-sm-12.col-md-4
-              .speaker--topic
-                ' Speaker's Bio
-              p.speaker--bio
-                = speaker.bio.html_safe
-
 hr.section-divider
 
 section#venue
@@ -142,6 +76,65 @@ section#venue
           li Take Exit D at Buona Vista and walk 500m to Matrix (Biopolis)
   .venue--map
     iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.785310671736!2d103.79004135040948!3d1.3038349990443774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1a43e3cb7111%3A0x9965b36cbf8d88c3!2sBiopolis!5e0!3m2!1sen!2ssg!4v1453434417662" frameborder="0" style="border:0" allowfullscreen=""
+
+section#fringe-events
+  .container
+    h2.section-header
+      ' Fringe Events
+      .line
+
+    .row
+      .col-sm-12
+        .row.text-center
+          .col-sm-4
+            h3.section-header
+              ' SG Ruby Meetup
+              .line
+
+            br
+
+            .text-muted
+              ' 21 June, Tuesday, 7:00pm - 9:00pm
+              br
+              ' Venue TBD
+
+            br
+            p
+              = link_to 'Register Now', 'http://www.meetup.com/Singapore-Ruby-Group/events/231503713/', class: 'btn btn-success'
+
+          .col-sm-4
+            h3.section-header
+              ' React-Rails Workshop
+              .line
+
+            br
+
+            .text-muted
+              ' 22 June, Wednesday, 1:00pm - 5:00pm
+              br
+              ' The Hub, 128 Prinsep Street, Singapore 188655
+
+            br
+            p
+              = link_to 'Register Now', 'http://www.ticketbase.com/events/reddotrubyconf-react-rails-workshop-5d88ddfb-f47c-4832-af80', class: 'btn btn-success'
+
+          .col-sm-4
+            h3.section-header
+              ' Github Patchwork
+              .line
+
+            br
+
+            .text-muted
+              ' 25 June, Saturday, 9:00am - 12:00pm
+              br
+              ' The Hub, 128 Prinsep Street, Singapore 188655
+
+            br
+            p
+              = link_to 'Register Now', 'https://github.com/blog/2177-patchwork-singapore', class: 'btn btn-success'
+
+hr.section-divider
 
 section#sponsors
   .container
@@ -204,6 +197,8 @@ section#sponsors
           = link_to 'http://bit.ly/growingwithhub' do
             = image_tag 'sponsors/hub.png'
 
+hr.section-divider
+
 section#accommodation-partners
   .container
     h2.section-header
@@ -230,6 +225,76 @@ section#code-of-conduct
         p RedDotRubyConf (RDRC) is dedicated to providing a harassment-free conference experience for all our attendees so that we can all learn and enjoy the conference in an inclusive and welcoming environment.
         p As such, we have a Code of Conduct that we would like all attendees to be mindful of and be respectful and considerate of all fellow conference attendees at all times. Matz is nice, so we are nice. Let's have a great conference!
         p data-no-turbolink=true Read the #{link_to "Code of Conduct", "/code-of-conduct#content"}.
+
+hr.section-divider
+
+section#speakers
+  .container
+    h2.section-header
+      ' Speakers
+      .line
+    .row
+      .col-sm-12.text-center
+        - Speaker.find_by_identifiers(:matz, :tenderlove).each do |speaker|
+          .speaker
+            .speaker--avatar
+              = image_tag speaker.avatar
+            .speaker--info
+              .speaker--name
+                = speaker.name
+              .speaker--tagline
+                = speaker.tagline
+      .col-sm-12.text-center.m-t
+        - Speaker.find_by_identifiers(:hone02, :chancancode, :kerrizor).each do |speaker|
+          .speaker
+            .speaker--avatar
+              = image_tag speaker.avatar
+            .speaker--info
+              .speaker--name
+                = speaker.name
+              .speaker--tagline
+                = speaker.tagline
+
+    .row
+      .col-sm-12
+        - Speaker.speakers.except(*Speaker::KEYNOTE_SPEAKERS).each do |_, speaker|
+          - speaker = OpenStruct.new(speaker)
+
+          hr.speaker-section-divider.line
+
+          .row
+            .anchor id=speaker.id
+            .col-sm-12.col-md-3.text-center
+              .speaker
+                .speaker--avatar
+                  = image_tag speaker.avatar
+
+                .speaker--info
+                  .speaker--name
+                    = speaker.name
+                  .speaker--tagline
+                    = speaker.tagline
+                  .speaker--social
+                    = link_to "#{Speaker::GITHUB_URL}#{speaker.github}" do
+                      = icon('github', class: 'fa-2x')
+                      = link_to "#{Speaker::TWITTER_URL}#{speaker.twitter}" do
+                        = icon('twitter', class: 'fa-2x')
+
+            .col-sm-12.col-md-5
+              .speaker--title
+                .speaker--topic
+                  = speaker.topic
+                p.speaker--description
+                  = speaker.description
+
+            .col-sm-12.col-md-4
+              .speaker--topic
+                ' Speaker's Bio
+              p.speaker--bio
+                = speaker.bio.html_safe
+
+
+hr.section-divider
 
 section#cta
   .container
