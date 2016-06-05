@@ -106,6 +106,14 @@
     background: #C7F464;
   }
 
+  .keynote-speakers {
+    .speaker {
+      width: 300px;
+      height: 350px;
+      vertical-align: top;
+    }
+  }
+
   .speaker {
     display: inline-block;
     width: 250px;

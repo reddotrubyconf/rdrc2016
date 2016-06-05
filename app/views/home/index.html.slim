@@ -26,7 +26,7 @@ section#schedule
 
         = render "program", time: "15:30", description: "Break", icon: "coffee"
         = render "talk"   , time: "16:00", speaker: Speaker.find(:timriley)
-        = render "talk"   , time: "16:30", speaker: Speaker.find(:kerrizor)
+        = render "talk"   , time: "16:30", speaker: Speaker.find(:sausheong)
 
     .col-sm-5
       h3.text-center
@@ -255,7 +255,7 @@ section#speakers
     h2.section-header
       ' Speakers
       .line
-    .row
+    .row.keynote-speakers
       .col-sm-12.text-center
         - Speaker.find_by_identifiers(:matz, :tenderlove).each do |speaker|
           .speaker
@@ -265,9 +265,9 @@ section#speakers
               .speaker--name
                 = speaker.name
               .speaker--tagline
-                = speaker.tagline
+                = speaker.tagline.html_safe
       .col-sm-12.text-center.m-t
-        - Speaker.find_by_identifiers(:hone02, :chancancode, :kerrizor).each do |speaker|
+        - Speaker.find_by_identifiers(:hone02, :chancancode, :sausheong).each do |speaker|
           .speaker
             .speaker--avatar
               = image_tag speaker.avatar
@@ -275,7 +275,7 @@ section#speakers
               .speaker--name
                 = speaker.name
               .speaker--tagline
-                = speaker.tagline
+                = speaker.tagline.html_safe
 
     .row
       .col-sm-12

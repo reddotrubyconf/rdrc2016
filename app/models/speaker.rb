@@ -1,7 +1,7 @@
 class Speaker
   TWITTER_URL = "https://twitter.com/"
   GITHUB_URL = "https://github.com/"
-  KEYNOTE_SPEAKERS = [:matz, :tenderlove, :hone02, :chancancode, :kerrizor]
+  KEYNOTE_SPEAKERS = [:matz, :tenderlove, :hone02, :chancancode, :sausheong]
 
   def self.all
     speakers.values.map { |speaker| OpenStruct.new(speaker) }
@@ -57,14 +57,14 @@ class Speaker
           :github   => "chancancode",
           :topic    => "Keynote"
         },
-      kerrizor:
+      sausheong:
         {
-          :id       => :kerrizor,
-          :name     => "Kerri Miller",
-          :avatar   => "speakers/kerrizor.png",
-          :tagline  => "Engineer, GitHub",
-          :twitter  => "kerrizor",
-          :github   => "kerrizor",
+          :id       => :sausheong,
+          :name     => "Sau Sheong Chang",
+          :avatar   => "speakers/sausheong.png",
+          :tagline  => "Managing Director, Digital Technology, <br>Singapore Power",
+          :twitter  => "sausheong",
+          :github   => "sausheong",
           :topic    => "Keynote"
         },
       jason:
