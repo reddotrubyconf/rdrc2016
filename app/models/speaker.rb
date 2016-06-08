@@ -303,6 +303,19 @@ class Speaker
           topic: "Building Real-Time App with React/Redux/Rails/RethinkDB",
           description: "Building real-time app is painful for the frontend, painful for the backend and even painful for the database. We will share how we build a real-time CRM app using React, Redux, Rails and RethinkDB (we call it the R4 framework) that is easy to reason and easy to build. Put fun back into real-time app development!"
         },
+      xintian:
+        {
+          id: :xintian,
+          lightning: true,
+          name: "Xian Tian ",
+          avatar: "speakers/xintian.png",
+          tagline: "Graduate of TechLadies Bootcamp",
+          twitter: nil,
+          github: "oxtian",
+          bio: "Xin Tian is a Masters dropout, customer service rep, and a graduate from the TechLadies Bootcamp. She now also co-organises the TechLadies Tech Talks and TechLadies Code Pairadise, providing a newbie-friendly environment for women to learn coding.",
+          topic: "Journey to becoming a techlady",
+          description: "Xin Tian is a Masters dropout, customer service rep, and a graduate from the TechLadies Bootcamp. She now also co-organises the TechLadies Tech Talks and TechLadies Code Pairadise, providing a newbie-friendly environment for women to learn coding."
+        },
     }
   end
 end

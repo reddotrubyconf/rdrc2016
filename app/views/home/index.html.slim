@@ -45,7 +45,7 @@ section#schedule
         = render "talk"   , time: "14:15", speaker: Speaker.find(:yasuko_ohba)
         = render "program", time: "14:45", icon: "bolt", description: "Lightning Talks"
 
-        - Speaker.find_by_identifiers(:kenji, :jack, :yuki, :steven).each do |speaker|
+        - Speaker.find_by_identifiers(:kenji, :jack, :yuki, :steven, :xintian).each do |speaker|
           = render "lightning", speaker: speaker
 
         = render "program", time: "15:15", description: "Break", icon: "coffee"
@@ -315,8 +315,10 @@ section#speakers
                   .speaker--tagline
                     = speaker.tagline
                   .speaker--social
-                    = link_to "#{Speaker::GITHUB_URL}#{speaker.github}" do
-                      = icon('github', class: 'fa-2x')
+                    - if speaker.github.present?
+                      = link_to "#{Speaker::GITHUB_URL}#{speaker.github}" do
+                        = icon('github', class: 'fa-2x')
+                    - if speaker.twitter.present?
                       = link_to "#{Speaker::TWITTER_URL}#{speaker.twitter}" do
                         = icon('twitter', class: 'fa-2x')
 
