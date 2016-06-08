@@ -307,14 +307,14 @@ class Speaker
         {
           id: :xintian,
           lightning: true,
-          name: "Xian Tian ",
+          name: "Xin Tian ",
           avatar: "speakers/xintian.png",
           tagline: "Graduate of TechLadies Bootcamp",
           twitter: nil,
           github: "oxtian",
           bio: "Xin Tian is a Masters dropout, customer service rep, and a graduate from the TechLadies Bootcamp. She now also co-organises the TechLadies Tech Talks and TechLadies Code Pairadise, providing a newbie-friendly environment for women to learn coding.",
           topic: "Journey to becoming a techlady",
-          description: "Xin Tian is a Masters dropout, customer service rep, and a graduate from the TechLadies Bootcamp. She now also co-organises the TechLadies Tech Talks and TechLadies Code Pairadise, providing a newbie-friendly environment for women to learn coding."
+          description: "A lot of developers see the gender imbalance in the tech community and are actively volunteering their time and resources to teach more women how to code. In this talk, I will share my experiences learning how to code through the TechLadies Bootcamp, what challenges I’ve faced, and how you can help newbies pick up Ruby and Rails."
         },
     }
   end
