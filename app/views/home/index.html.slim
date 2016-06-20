@@ -51,7 +51,24 @@ section#schedule
         = render "program", time: "15:15", description: "Break", icon: "coffee"
         = render "talk"   , time: "15:45", speaker: Speaker.find(:grzegorz)
         = render "talk"   , time: "16:15", speaker: Speaker.find(:hone02)
-        = render "program", time: "19:00", description: "After Party", icon: "beer"
+        tr.program
+          td.program--time.time 19:00
+          td
+          td
+            .program--description
+              = icon("beer", class: "fa")
+              ' After Party
+            .program--details
+              p
+                strong Element (Bar) at Amara Singapore
+                br
+                ' 165 Tanjong Pagar Road
+                br
+                ' Singapore 088539
+                br
+                ' (#{link_to 'Map', 'https://www.google.co.th/maps/place/Element+Restaurant+Amara+Singapore/@1.2749664,103.8413809,17z/data=!3m1!4b1!4m5!3m4!1s0x31da196b5fbce62b:0x80932e718903b30!8m2!3d1.274961!4d103.843575'})
+              p
+                ' There will be finger food, beer and Ruby friends!
 
 hr.section-divider
 
