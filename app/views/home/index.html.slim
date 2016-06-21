@@ -18,7 +18,7 @@ section#schedule
         = render "talk"   , time: "11:45", speaker: Speaker.find(:prathamesh)
         = render "program", time: "12:15", description: "Lunch", icon: "cultery"
         = render "talk"   , time: "13:45", speaker: Speaker.find(:chancancode)
-        = render "talk"   , time: "14:30", speaker: Speaker.find(:kir)
+        = render "talk"   , time: "14:30", speaker: Speaker.find(:grzegorz)
         = render "program", time: "15:00", icon: "bolt", description: "Lightning Talks"
 
         - Speaker.find_by_identifiers(:jo, :hiroshi, :ankita, :giovanni).each do |speaker|
@@ -49,7 +49,7 @@ section#schedule
           = render "lightning", speaker: speaker
 
         = render "program", time: "15:15", description: "Break", icon: "coffee"
-        = render "talk"   , time: "15:45", speaker: Speaker.find(:grzegorz)
+        = render "talk"   , time: "15:45", speaker: Speaker.find(:kir)
         = render "talk"   , time: "16:15", speaker: Speaker.find(:hone02)
         tr.program
           td.program--time.time 19:00
