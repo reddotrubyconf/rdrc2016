@@ -14,14 +14,18 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap-sprockets
+//= require local_time
 //= require_tree .
+//= require_tree ./channels
 
 $(document).ready(function() {
   $(window).scroll(function() {
-    if ($(".navbar").offset().top > 100) {
-      $(".navbar").addClass("fixed");
-    } else {
-      $(".navbar").removeClass("fixed");
+    if ( !$('.navbar') ) {
+      if ($('.navbar').offset().top > 100) {
+        $('.navbar').addClass('fixed')
+      } else {
+        $('.navbar').removeClass('fixed')
+      }
     }
   });
 
@@ -32,4 +36,29 @@ $(document).ready(function() {
   $(".venue--map").on("mouseleave", function () {
     $(".venue--map iframe").css("pointer-events", "none");
   });
+
+  $('#messages').animate({ scrollTop: $('#messages')[0].scrollHeight }, 1000)
+
+  if (window.localStorage) {
+    $('textarea:empty').each(function() {
+      var data = localStorage[this.name]
+      if (data) { this.value = data }
+    })
+
+    $(document).on('keyup', 'textarea', function() {
+      var that = this
+      if (that.autosaveTimeout) { clearTimeout(that.autosaveTimeout) }
+      that.autosaveTimeout = setTimeout(function() {
+        localStorage[that.name] = that.value
+      }, 100)
+    })
+
+    $(document).on('submit', 'form', function() {
+      $(this).find('textarea').each(function() {
+        var that = this
+        if (that.autosaveTimeout) { clearTimeout(that.autosaveTimeout) }
+        localStorage.removeItem(that.name)
+      })
+    })
+  }
 });

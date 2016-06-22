@@ -5,3 +5,17 @@
 @import "schedule";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+
+textarea#message_content {
+  min-height: 50px;
+  resize: none;
+}
+
+#messages {
+  max-height: 500px;
+  overflow: auto;
+}
+
+.announcement {
+  color: red;
+}

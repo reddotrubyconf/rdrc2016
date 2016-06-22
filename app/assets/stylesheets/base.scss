@@ -92,3 +92,15 @@ a.cta {
     transform: translate(2px, 2px);
   }
 }
+
+$sizes  : ((xs, 5px), (sm, 10px), (md, 20px), (lg, 40px));
+$corners: (top, right, bottom, left);
+
+// .mar-sm-top => { margin-top: 10px }
+@each $size in $sizes {
+  @each $corner in $corners {
+    .mar-#{nth($size, 1)}-#{$corner} {
+      margin-#{$corner}: #{nth($size, 2)};
+    }
+  }
+}

@@ -9,5 +9,11 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
   # Serve websocket cable requests in-process
-  # mount ActionCable.server => '/cable'
+  mount ActionCable.server => "/cable"
+
+  get "chatroom", to: "chatrooms#show"
+  get "engage", to: "sessions#new"
+  post "create", to: "sessions#create"
+  resources :messages, only: :create
+  post "render_message", to: "messages#render_message"
 end
