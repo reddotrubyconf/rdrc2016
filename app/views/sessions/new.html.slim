@@ -3,4 +3,4 @@ h1 Join the Chat
 = form_for @user, url: create_url do |f|
   = f.label "Nickname:"
   = f.text_field :nickname, class: "form-control"
-  = f.submit "Join", class: "btn btn-primary mar-sm-top"
+  = f.submit "Engage Now", class: "btn btn-primary mar-sm-top", data: { disable_with: "Engaging..." }
