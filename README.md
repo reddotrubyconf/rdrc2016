@@ -1,5 +1,7 @@
 # RedDotRubyConf 2016 Website
 
+[![Build Status](https://travis-ci.org/reddotrubyconf/rdrc2016.svg?branch=master)](https://travis-ci.org/reddotrubyconf/rdrc2016)
+
 [www.reddotrubyconf.com](http://www.reddotrubyconf.com)
 
 
