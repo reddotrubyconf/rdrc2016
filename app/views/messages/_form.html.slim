@@ -1,0 +1,5 @@
+= form_for message, remote: true, html: { id: current_user.remember_token, class: "message-box" } do |f|
+  = f.label "Hey #{current_user.nickname}, Say Something"
+  = f.text_area :content, class: "form-control", placeholder: "Be nice to each other."
+  = f.hidden_field :chatroom_id, value: chatroom.id
+  = f.submit "send", class: "btn btn-primary btn-lg mar-sm-top pull-right", data: { disable_with: "Sending..." }

@@ -1,0 +1,16 @@
+.row
+  .col-xs-10.col-xs-offset-1
+    h1
+      a href="/" RedDotRubyConf
+      '
+      | #{Time.current.year}
+
+    .message-panel
+      - if @messages.any?
+        #messages.panel-body
+          = render partial: "messages/message", collection: @messages
+      - else
+        #messages.panel-body.hidden
+
+    div.message-form
+      = render partial: "messages/form", locals: { message: @message, chatroom: @chatroom }

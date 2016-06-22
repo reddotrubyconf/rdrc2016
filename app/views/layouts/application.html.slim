@@ -12,6 +12,7 @@ html
 
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = action_cable_meta_tag
 
   body
     nav class="navbar navbar-fixed-top"
@@ -30,6 +31,7 @@ html
             li= link_to "Sponsors" , "/#sponsors"
             li= link_to "Code of Conduct" , "/code-of-conduct#content"
             li= link_to "Accommodation Partners" , "/accommodation-partners#content"
+            li= link_to "Engage" , "/engage"
           ul class="nav navbar-nav navbar-right"
             li= link_to "Register Now" , "https://www.ticketbase.com/events/reddotrubyconf-2016"
     section.splash
