@@ -56,8 +56,7 @@ $(document).ready(function() {
     $(document).on('keydown', 'textarea#message_content', function(event) {
       var that = this
       if ((event.metaKey || event.ctrlKey) && event.keyCode == 13) {
-        console.log($(that).closest('form'))
-        $(that).closest('form').find('input[type="submit"]').trigger('click')
+        $(that).closest('form').find('input[type="submit"]').click()
       }
     })
 
