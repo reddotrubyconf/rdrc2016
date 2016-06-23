@@ -8,7 +8,10 @@ class MessagesController < ApplicationController
     if message.save
       broadcast_message(message)
 
-      head :ok
+      respond_to do |format|
+        format.js { render status: :created }
+        format.any { head :ok }
+      end
     end
   end
 
