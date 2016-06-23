@@ -21,6 +21,7 @@ gem 'twemoji'
 gem 'html-pipeline'
 gem 'github-markdown'
 gem 'sanitize'
+gem 'rinku'
 
 group :production do
   gem 'rails_12factor'
