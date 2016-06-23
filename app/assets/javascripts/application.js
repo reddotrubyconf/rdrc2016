@@ -58,6 +58,7 @@ $(document).ready(function() {
         var that = this
         if (that.autosaveTimeout) { clearTimeout(that.autosaveTimeout) }
         localStorage.removeItem(that.name)
+        $(that).val('')
       })
     })
   }
