@@ -31,6 +31,7 @@ end
 group :development, :test do
   gem 'byebug'
   gem 'rspec-rails'
+  gem 'rspec-instafail'
   gem 'factory_girl_rails'
   gem 'database_rewinder'
 end
