@@ -14,13 +14,17 @@ class RenderMessage
     content_tag(:div, class: "message-body") do
       content_tag(:strong, "#{nickname} ") +
       content_tag(:span, local_time_ago(created_at), class: "text-muted") +
-      content_tag(:p, content, class: message_body_class)
+      content_tag(:p, markdown_content, class: message_body_class)
     end
   end
 
   private
 
     attr_reader :nickname, :created_at, :content, :announcement
+
+    def markdown_content
+      RenderMarkdown.new(content).call
+    end
 
     def message_body_class
       ["message-body", announcement_class].join(" ")
