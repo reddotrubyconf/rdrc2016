@@ -17,6 +17,10 @@ gem "bootstrap-sass"
 gem 'font-awesome-sass'
 gem "meta-tags"
 gem "local_time"
+gem "twemoji"
+gem "html-pipeline"
+gem "github-markdown"
+gem "sanitize"
 
 group :production do
   gem "rails_12factor"
