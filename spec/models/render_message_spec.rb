@@ -15,7 +15,7 @@ RSpec.describe RenderMessage do
     it "render links" do
       result = render("realDonaldTrump", "2016-01-01T00:00:00Z", "Visit https://www.donaldjtrump.com/ <script>alert('Vote For Trump!!')</script>")
 
-      expect(result).to eq %(<div class=\"message-body\"><strong>realDonaldTrump </strong><span class=\"text-muted\"><time datetime=\"2016-01-01T00:00:00Z\" data-local=\"time-ago\">January  1, 2016 12:00am</time></span><p class=\"message-body \">Visit <a href=\"https://www.donaldjtrump.com/\" target=\"_blank\">https://www.donaldjtrump.com/</a> alert('Vote For Trump!!')</p></div>)
+      expect(result).to eq %(<div class=\"message-body\"><strong>realDonaldTrump </strong><span class=\"text-muted\"><time datetime=\"2016-01-01T00:00:00Z\" data-local=\"time-ago\">January  1, 2016 12:00am</time></span><p class=\"message-body \"><p>Visit <a href=\"https://www.donaldjtrump.com/\">https://www.donaldjtrump.com/</a> &lt;script&gt;alert('Vote For Trump!!')&lt;/script&gt;</p></p></div>)
     end
 
     context "announcement" do

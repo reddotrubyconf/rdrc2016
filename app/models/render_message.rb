@@ -32,8 +32,8 @@ class RenderMessage
 
     def formatted_content
       @content = RenderMarkdown.new(@content).call
-      @content = Rinku.auto_link(@content, :all, 'target="_blank"')
+      @content = Rinku.auto_link(@content)
 
-      sanitize(@content, tags: %w(a), attributes: %w(href target))
+      sanitize(@content, tags: %w(a p), attributes: %w(href target))
     end
 end
