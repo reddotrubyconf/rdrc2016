@@ -39,10 +39,6 @@ $(document).ready(function() {
 
   $('#messages').animate({ scrollTop: $('#messages')[0].scrollHeight }, 1000)
 
-  $('#send-message').click(function() {
-    $('#message-content').val('')
-  })
-
   if (window.localStorage) {
     $('textarea:empty').each(function() {
       var data = localStorage[this.name]
@@ -62,6 +58,7 @@ $(document).ready(function() {
         var that = this
         if (that.autosaveTimeout) { clearTimeout(that.autosaveTimeout) }
         localStorage.removeItem(that.name)
+        $(that).val('')
       })
     })
   }
