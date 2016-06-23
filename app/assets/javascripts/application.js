@@ -53,6 +53,13 @@ $(document).ready(function() {
       }, 100)
     })
 
+    $(document).on('keydown', 'textarea#message_content', function(event) {
+      var that = this
+      if ((event.metaKey || event.ctrlKey) && event.keyCode == 13) {
+        $(that).closest('form').find('input[type="submit"]').click()
+      }
+    })
+
     $(document).on('submit', 'form', function() {
       $(this).find('textarea').each(function() {
         var that = this
