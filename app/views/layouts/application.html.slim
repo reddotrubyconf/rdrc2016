@@ -43,15 +43,18 @@ html
               = image_tag "logo-icon.png"
               div RedDotRubyConf
         .row
-          .col-sm-6.splash--blurb
+          .col-sm-12.splash--blurb
             p
               ' Two Days • Single Track
               br
               ' June 23 and 24, 2016
               br
               ' Singapore
-          .col-sm-6.splash--cta
-            = link_to "Register Now", "https://www.ticketbase.com/events/reddotrubyconf-2016", class: "cta"
+          .col-sm-12.splash--cta
+            = link_to "Watch Videos"  , "https://www.youtube.com/playlist?list=PLECEw2eFfW7iiJpXtb_cYeKv5_A6Pd1tl", class: "cta"
+            ' &nbsp;
+            ' &nbsp;
+            = link_to "View Resources", "https://gist.github.com/cheeaun/43843c8b1c764825b9f3d63ed8f5bd78", class: "cta"
 
     = yield
 
