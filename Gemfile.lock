@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/jch/html-pipeline.git
-  revision: 2d78a800f34c5b66c3a089f2a917eaa34944fe8d
+  revision: 852512d8dedf4e54edba73731cf445dda65d96bc
   branch: bump-rails-dependency
   specs:
     html-pipeline (2.4.1)
@@ -203,8 +203,9 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (2.0.5)
-    turbolinks (2.5.3)
-      coffee-rails
+    turbolinks (5.0.0)
+      turbolinks-source (~> 5)
+    turbolinks-source (5.0.0)
     twemoji (3.0.1)
       nokogiri (~> 1.6.2)
     tzinfo (1.2.2)
